@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Isometric Cube Icon -->
+  <g transform="translate(0, 2)">
+    <path d="M22 4L38 13L22 22L6 13L22 4Z" fill="#C8956C"/>
+    <path d="M6 13L22 22V38L6 29V13Z" fill="#A67B56"/>
+    <path d="M38 13L22 22V38L38 29V13Z" fill="#8B6340"/>
+    <path d="M22 4L38 13L22 22L6 13Z" stroke="#D4A882" stroke-width="0.5" fill="none" opacity="0.5"/>
+  </g>
+  <text x="52" y="32" font-family="'Bricolage Grotesque', 'Arial Black', sans-serif" font-weight="800" font-size="28" fill="#ffffff" letter-spacing="3">CUBE</text>
+  <text x="53" y="44" font-family="'Figtree', 'Helvetica', sans-serif" font-weight="400" font-size="7.5" fill="rgba(255,255,255,0.6)" letter-spacing="3.5">ARQUITECTOS &amp; REFORMAS</text>
+</svg>
