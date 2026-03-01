@@ -26,7 +26,9 @@
   <meta name="twitter:image" content="https://cubereformasreus.es/img/reforma-cocina-salon-reus.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/reforma-cocina-salon-reus.webp" fetchpriority="high">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"></noscript>
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
@@ -126,7 +128,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--dark);overflow:hidden}
 .hero-bg{position:absolute;inset:0;overflow:hidden}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35;animation:heroZoom 25s ease-out forwards}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35;animation:heroZoom 25s ease-out forwards;will-change:transform}
 @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
 .hero-grad{position:absolute;inset:0;background:linear-gradient(105deg,rgba(12,12,12,.94) 0%,rgba(12,12,12,.7) 45%,rgba(200,149,108,.1) 100%)}
 /* Decorative geometry */
@@ -446,7 +448,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 <nav class="nav nav--top" id="navbar" aria-label="Navegación principal">
   <div class="nav-in">
     <a href="/" class="nav-logo" aria-label="CUBE Reformas Reus - Inicio">
-      <img src="img/logoweb.png" alt="CUBE Arquitectos y Reformas Reus" width="180" height="46">
+      <img src="img/logoweb.webp" alt="CUBE Arquitectos y Reformas Reus" width="180" height="46">
     </a>
     <div class="nav-links">
       <a href="#servicios">Servicios</a>
@@ -479,7 +481,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 <main id="main">
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-bg"><img src="img/reforma-cocina-salon-reus.webp" alt="Interior de cocina y salón reformado por CUBE en Reus" width="1600" height="900"><img src="img/reforma-cocina-salon-reus.webp" alt="Reforma integral de cocina y salón en Reus - CUBE Arquitectos y Reformas" class="seo-img"></div>
+  <div class="hero-bg"><img src="img/reforma-cocina-salon-reus.webp" srcset="img/reforma-cocina-salon-reus-800.webp 800w, img/reforma-cocina-salon-reus.webp 1600w" sizes="100vw" alt="Interior de cocina y salón reformado por CUBE en Reus" width="1600" height="900" fetchpriority="high"></div>
   <div class="hero-grad"></div>
   <div class="hero-deco" aria-hidden="true">
     <div class="line line-v1"></div><div class="line line-v2"></div><div class="line line-h1"></div>
@@ -593,7 +595,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
   <div class="container">
     <div class="about-grid">
       <div class="about-img rv-l">
-        <img src="img/reforma-obra-cocina-reus.webp" alt="Equipo de CUBE trabajando en una reforma de cocina en Reus" loading="lazy" width="600" height="450">
+        <img src="img/opt-reforma-obra-cocina-reus.webp" alt="Equipo de CUBE trabajando en una reforma de cocina en Reus" loading="lazy" width="600" height="450">
         <div class="about-img-badge"><strong>+15</strong><span>años de experiencia</span></div>
       </div>
       <div class="about-text rv-r">
@@ -642,12 +644,12 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
       <p class="desc" style="margin:8px auto 0;text-align:center">Hemos realizado proyectos en el centro de Reus, el Carme, Sant Josep Obrer, Mas Abelló y muchas más zonas.</p>
     </div>
     <div class="gallery-grid">
-      <div class="gi gi-1 rv-s"><img src="img/reforma-cocina-salon-reus.webp" alt="Reforma de cocina abierta al salón en Reus" loading="lazy" width="700" height="400"><span class="gi-tag">Cocina + Salón · Reus</span></div>
-      <div class="gi gi-2 rv-s d1"><img src="img/reforma-bano-ducha-cristal-reus.webp" alt="Reforma de baño con ducha de cristal en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Baño · Reus</span></div>
-      <div class="gi gi-3 rv-s d2"><img src="img/reforma-bano-diseno-reus.webp" alt="Reforma de baño con diseño natural en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Baño diseño · Reus</span></div>
-      <div class="gi gi-4 rv-s d3"><img src="img/reforma-apartamento-estudio-reus.webp" alt="Reforma de apartamento estudio en Reus" loading="lazy" width="400" height="400"><span class="gi-tag">Apartamento · Reus</span></div>
-      <div class="gi gi-5 rv-s d4"><img src="img/reforma-local-comercial-reus.webp" alt="Reforma de local comercial en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Local comercial · Reus</span></div>
-      <div class="gi gi-6 rv-s d5"><img src="img/reforma-salon-vivienda-reus.webp" alt="Reforma de salón de vivienda en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Salón · Reus</span></div>
+      <div class="gi gi-1 rv-s"><img src="img/reforma-cocina-salon-reus-800.webp" alt="Reforma de cocina abierta al salón en Reus" loading="lazy" width="700" height="400"><span class="gi-tag">Cocina + Salón · Reus</span></div>
+      <div class="gi gi-2 rv-s d1"><img src="img/opt-reforma-bano-ducha-cristal-reus.webp" alt="Reforma de baño con ducha de cristal en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Baño · Reus</span></div>
+      <div class="gi gi-3 rv-s d2"><img src="img/opt-reforma-bano-diseno-reus.webp" alt="Reforma de baño con diseño natural en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Baño diseño · Reus</span></div>
+      <div class="gi gi-4 rv-s d3"><img src="img/opt-reforma-apartamento-estudio-reus.webp" alt="Reforma de apartamento estudio en Reus" loading="lazy" width="400" height="400"><span class="gi-tag">Apartamento · Reus</span></div>
+      <div class="gi gi-5 rv-s d4"><img src="img/opt-reforma-local-comercial-reus.webp" alt="Reforma de local comercial en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Local comercial · Reus</span></div>
+      <div class="gi gi-6 rv-s d5"><img src="img/opt-reforma-salon-vivienda-reus.webp" alt="Reforma de salón de vivienda en Reus" loading="lazy" width="400" height="200"><span class="gi-tag">Salón · Reus</span></div>
     </div>
   </div>
 </section>
@@ -800,7 +802,7 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo"><img src="img/logoweb.png" alt="CUBE Reformas Reus" width="160" height="42"></div>
+        <div class="footer-logo"><img src="img/logoweb.webp" alt="CUBE Reformas Reus" width="160" height="42" loading="lazy"></div>
         <p>Empresa de reformas integrales y arquitectura en Reus. Más de 15 años transformando viviendas y locales en todas las zonas de la ciudad.</p>
         <address style="font-style:normal;margin-top:12px;font-size:.84rem;color:rgba(255,255,255,.4);line-height:1.8">Carrer de Misericòrdia, 5, 43205 Reus<br>Lun-Vie: 9:00-19:00 | Sáb: 10:00-14:00</address>
       </div>
