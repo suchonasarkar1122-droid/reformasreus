@@ -105,6 +105,8 @@ h3{font-size:clamp(1.15rem,2vw,1.4rem)}
 .content-section h2{margin-bottom:24px}
 .content-section p{font-size:1rem;line-height:1.85;color:var(--text-l);margin-bottom:16px;max-width:800px}
 .content-section p:last-child{margin-bottom:0}
+.post-figure{max-width:800px;margin:0 0 32px}
+.post-figure img{display:block;width:100%;height:auto;border-radius:14px}
 .content-section ul{margin:16px 0 24px 0}
 .content-section ul li{position:relative;padding-left:24px;margin-bottom:10px;font-size:.95rem;color:var(--text-l);line-height:1.7}
 .content-section ul li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
