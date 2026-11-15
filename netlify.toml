@@ -1,0 +1,7 @@
+# Desactiva el post-procesado de Netlify ("Pretty URLs"), que reescribía los enlaces
+# internos /ruta.html -> /ruta y los dejaba distintos del canonical y del sitemap.
+[build.processing]
+  skip_processing = true
+
+[build.processing.html]
+  pretty_urls = false
